@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show me the bacon!!</title>
+
+    <link rel="stylesheet" href="Bacon.css">
+    <script src="Bacon.js"></script>
+</head>
+<body>
+    <h1>Bacon Generator</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>Select your options</h2>
+            <label for="newPara">How many paragraphs?</label>
+            <select id="newPara">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select><br /><br />
+            <input type="button" value="Get my Bacon!" onclick="getBacon()">
+        </div>
+        <div class="myflexboxColumn">
+            <h2>Raw Data</h2>
+            <p id="rawData">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>Returned data as formatted paragraphs</h2>
+            <p id="formattedData">
+            </p>
+        </div>
+    </div>    
+</body>
+</html>
